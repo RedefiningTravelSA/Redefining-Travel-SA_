@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redefining Travel SA</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #333; }
+    header { background-color: #00695c; color: white; padding: 20px; text-align: center; }
+    nav { background-color: #004d40; display: flex; justify-content: center; padding: 10px 0; flex-wrap: wrap; }
+    nav a { color: white; padding: 10px 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { background-color: #00332c; }
+    section { padding: 30px 20px; max-width: 900px; margin: auto; background-color: white; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    h2 { color: #004d40; }
+    ul { padding-left: 20px; }
+    .button { background-color: #00695c; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px; margin-top: 10px; display: inline-block; }
+    .button:hover { background-color: #004d40; }
+    input, select { margin: 10px 0; padding: 8px; width: 100%; max-width: 400px; }
+    footer { background: #004d40; color: white; text-align: center; padding: 15px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Redefining Travel SA</h1>
+    <p>Community-Based Tourism Powered by Youth, Tech, and Sustainability</p>
+  </header>
+
+  <nav>
+    <a href="#features">App Features</a>
+    <a href="#virtual">Virtual Tours</a>
+    <a href="#book">Book Experience</a>
+    <a href="#learn">E-Learning</a>
+    <a href="#clean">Clean-Up</a>
+    <a href="#rewards">Rewards</a>
+    <a href="#auth">Login / Sign Up</a>
+    <a href="#payment">Payment</a>
+  </nav>
+
+  <section id="features">
+    <h2>App Features</h2>
+    <ul>
+      <li>E-learning for youth in hospitality, tourism, admin, storytelling, and entrepreneurship</li>
+      <li>Report illegal waste sites and join clean-up activities</li>
+      <li>Book cultural experiences like cooking, crafts, storytelling, and farming workshops</li>
+      <li>Games that teach rural traditions and local culture</li>
+      <li>Virtual tours to preview and choose local experiences</li>
+    </ul>
+  </section>
+
+  <section id="virtual">
+    <h2>Virtual Tours & Storytelling</h2>
+    <p>Preview local experiences and learn about the history and culture before booking.</p>
+    <ul>
+      <li><strong>Village Life Intro:</strong> Walk through a rural village with audio storytelling about its people and traditions.</li>
+      <li><strong>Traditional Dance Preview:</strong> Watch a dance rehearsal and meet the performers.</li>
+      <li><strong>Festival Highlights:</strong> Virtual glimpse into food, music, and art from local events.</li>
+      <li><strong>Language Snippets:</strong> Hear common phrases and greetings in Setswana.</li>
+      <li><strong>Safari Sneak Peek:</strong> See highlights of wildlife tours hosted by youth guides.</li>
+      <li><strong>Historical Landmark Tour:</strong> Virtual tour of an old site with narration from community elders.</li>
+      <li><strong>Meet the Hosts:</strong> Video intros from youth hosts describing their offerings and cultural roots.</li>
+    </ul>
+    <button class="button" onclick="alert('Virtual tours coming soon!')">View Sample Tour</button>
+  </section>
+
+  <section id="book">
+    <h2>Book an Experience</h2>
+    <p>Explore authentic activities hosted by local youth.</p>
+    <ul>
+      <li>Storytelling Under the Stars – R150</li>
+      <li>Traditional Dance Workshop – R130</li>
+      <li>Local Festival Experience – R200</li>
+      <li>Intro to Setswana Language – R90</li>
+      <li>Guided Safari with Youth Rangers – R300</li>
+      <li>Village Cooking Experience – R120</li>
+      <li>Craft Workshop with Local Artists – R100</li>
+    </ul>
+    <button class="button" onclick="alert('Booking feature coming soon!')">Browse More</button>
+  </section>
+
+  <section id="learn">
+    <h2>E-Learning</h2>
+    <p>Access free training in hospitality, tourism, admin, entrepreneurship, and more.</p>
+    <button class="button" onclick="alert('E-learning platform in progress.')">Start Learning</button>
+  </section>
+
+  <section id="clean">
+    <h2>Report Illegal Dumping</h2>
+    <p>Help us keep the community clean by identifying waste sites near you.</p>
+    <button class="button" onclick="alert('Waste reporting feature in prototype phase.')">Report Site</button>
+  </section>
+
+  <section id="rewards">
+    <h2>Loyalty & Retention</h2>
+    <ul>
+      <li><strong>Referral Points:</strong> Invite friends and earn points towards a free tour</li>
+      <li><strong>First-Timer Discounts:</strong> Get a discount when you book your first experience</li>
+      <li><strong>Quarterly Competitions:</strong> Stand a chance to win a free tour or experience every 3 months</li>
+    </ul>
+    <button class="button" onclick="alert('Sign up to start earning points and rewards!')">Join Rewards Program</button>
+  </section>
+
+  <section id="auth">
+    <h2>Login / Sign Up</h2>
+    <form onsubmit="event.preventDefault(); alert('Authentication feature in development.')">
+      <input type="text" placeholder="Username or Email" required><br>
+      <input type="password" placeholder="Password" required><br>
+      <button class="button" type="submit">Login</button>
+      <p>New here? <a href="#signup">Sign up</a></p>
+    </form>
+  </section>
+
+  <section id="payment">
+    <h2>Secure Payment</h2>
+    <p>Select your experience and payment method below:</p>
+    <form onsubmit="event.preventDefault(); alert('Payment simulated – feature coming soon.');">
+      <select required>
+        <option value="">-- Select Experience --</option>
+        <option value="1">Storytelling Under the Stars – R150</option>
+        <option value="2">Village Cooking Experience – R120</option>
+        <option value="3">Craft Workshop – R100</option>
+      </select><br />
+      <select required>
+        <option value="">-- Payment Method --</option>
+        <option value="card">Credit/Debit Card</option>
+        <option value="snapscan">SnapScan</option>
+        <option value="eft">EFT</option>
+      </select><br />
+      <button class="button" type="submit">Pay Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Redefining Travel SA | Empowering Communities Through Experience</p>
+  </footer>
+</body>
+</html>
