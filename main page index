@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redefining Travel SA</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #333; }
+    header { background-color: #00695c; color: white; padding: 20px; text-align: center; }
+    nav { background-color: #004d40; display: flex; justify-content: center; padding: 10px 0; flex-wrap: wrap; }
+    nav a { color: white; padding: 10px 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { background-color: #00332c; }
+    section { padding: 30px 20px; max-width: 900px; margin: auto; background-color: white; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    h2 { color: #004d40; }
+    ul { padding-left: 20px; }
+    .button { background-color: #00695c; color: white; padding: 10px 20px; border: none; cursor: pointer; border-radius: 5px; margin-top: 10px; display: inline-block; }
+    .button:hover { background-color: #004d40; }
+    input, select { margin: 10px 0; padding: 8px; width: 100%; max-width: 400px; }
+    img.feature-img { width: 100%; border-radius: 10px; margin-top: 10px; }
+    footer { background: #004d40; color: white; text-align: center; padding: 15px; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo" style="width: 80px; height: auto;" />
+    <h1>Redefining Travel SA</h1>
+    <p>Community-Based Tourism Powered by Youth, Tech, and Sustainability</p>
+  </header>
+
+  <nav>
+    <a href="#features">App Features</a>
+    <a href="virtual.html">Virtual Tour</a>
+    <a href="#payment">Book & Pay</a>
+  </nav>
+
+  <section id="features">
+    <h2>Explore Local Experiences</h2>
+    <ul>
+      <li>🦁 Safari with Youth Rangers</li>
+      <li>🎶 Cultural Dance & Music Sessions</li>
+      <li>🍲 Traditional Cooking Classes</li>
+      <li>🗣️ Learn Local Languages (e.g., Setswana)</li>
+      <li>🧶 Crafting & Storytelling Workshops</li>
+      <li>🎉 Local Festivals & Events</li>
+    </ul>
+    <img src="https://source.unsplash.com/featured/?african,culture" alt="Culture" class="feature-img">
+  </section>
+
+  <section id="payment">
+    <h2>Book an Experience</h2>
+    <form onsubmit="event.preventDefault(); alert('Booking submitted (mock)!');">
+      <label for="activity">Choose an experience:</label><br>
+      <select id="activity" required>
+        <option value="">-- Select --</option>
+        <option>Safari with Youth Rangers – R300</option>
+        <option>Cooking Class & Meal – R120</option>
+        <option>Language Learning (1-on-1) – R100</option>
+        <option>Dance Workshop – R150</option>
+        <option>Storytelling Night – R90</option>
+        <option>Festival Pass – R180</option>
+      </select><br><br>
+
+      <label for="payment-method">Choose a payment method:</label><br>
+      <select id="payment-method" required>
+        <option value="">-- Payment Method --</option>
+        <option>Credit/Debit Card</option>
+        <option>SnapScan</option>
+        <option>EFT</option>
+      </select><br><br>
+
+      <button class="button" type="submit">Pay Now</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Redefining Travel SA | Empowering Communities Through Experience</p>
+  </footer>
+</body>
+</html>
